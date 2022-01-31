@@ -1,0 +1,142 @@
+* {
+    font-family: 'Amiri', serif;
+}
+
+
+
+
+#button {
+    width: 140px;
+    height: 45px;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 16px;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+#button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 16px;
+    width: 5px;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+#button:hover::before {
+    width: 100%;
+
+}
+
+
+
+#button:active:before {
+    background: #b9b9b9;
+    border-radius: 16px;
+}
+
+.bn {
+    background-color: #3da58e;
+    border-radius: 20px;
+
+}
+
+#col1 {
+    border-radius: 20px;
+    background-color: #3da58e;
+
+
+
+}
+
+.box {
+
+    border-radius: 20px;
+    min-height: 500px;
+
+
+}
+
+
+
+
+#login {
+
+    border-radius: 20px;
+    min-height: 500px;
+
+    border: #c4bebe00 solid 0.5px;
+}
+
+
+
+
+.inputForm:focus:active {
+    background-color: #4d9c8a;
+}
+
+.icon {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.form-floating> {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 1rem 0.75rem;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity 100ms ease-in-out 0ms, transform 0s ease-in-out;
+}
+
+.box:hover {
+    border-top: white solid 0.5px;
+    border-bottom: white solid 0.5px;
+
+
+}
+
+.box {
+    border-radius: 20px;
+    min-height: 500px;
+
+
+}
+
+
+#login {
+
+    border-radius: 20px;
+    min-height: 500px;
+
+    border: #c4bebe00 solid 0.5px;
+}
+
+
+
+.inputForm {
+    background-color: #ffffff23;
+}
+
+.inputForm:focus {
+    background-color: #802e2e23;
+}
+
+.icon {
+    font-size: 50px;
+    margin-top: 10px;
+}
