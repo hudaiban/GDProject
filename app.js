@@ -6,44 +6,55 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 const dbStudent = require('./models/student');
 const dbAdmin = require('./models/admin');
+const bodyParser = require('body-parser')
 
 
 mongoose.connect('mongodb://localhost:27017/Proj', { useNewUrlParser: true, useUnifiedTopology: true });
+app.use(bodyParser.urlencoded({ extended: false }))
 
 app.get('/', (req, res) => {
 
     res.render('index.ejs');
 
 })
+
+
 app.get('/gpa', (req, res) => {
 
     res.render('gpa.ejs');
 
 })
+
+
 app.get('/login', (req, res) => {
 
     res.render('login.ejs')
 })
+
+
+
 app.get('/register', (req, res) => {
 
     res.render('register.ejs')
 })
 
 
+
 app.post('/registerAccount', (req, res) => {
 
     const user = new dbStudent(req.body);
-  
 
     console.log(req.body);
 
     user.save()
+
         .then(result => {
             res.send(result);
         })
         .catch(err => {
             console.log(err);
         })
+        
 })
 
 app.post('/loginSc', (req, res) => {
