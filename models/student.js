@@ -8,6 +8,7 @@ const studentSchema = new Schema({
         type: String,
         required: true,
 
+
     },
     password: {
         type: Number,
@@ -17,8 +18,17 @@ const studentSchema = new Schema({
     email: {
         type: String,
         required: true,
+        unique: true
+    },
+    uniNumber: {
+        type: Number,
+        required: true,
+        unique: true,
+    },
+    date: {
+        type: Date,
+        default: Date.now,
     }
-
 })
 
 

@@ -13,15 +13,22 @@ const adminShema = new Schema({
     },
     password: {
         type: Number,
-        required: true
+        required: true,
     },
     email: {
         type: String,
         required: true,
+        unique: true,
+
     },
-    major: {
-        type: String,
+    uniNumber: {
+        type: Number,
         required: true,
+        unique: true,
+    },
+    date:{
+        type:Date,
+        default:Date.now,
     }
 
 })

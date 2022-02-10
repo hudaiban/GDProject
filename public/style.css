@@ -37,6 +37,7 @@
 #button:hover::before {
     width: 100%;
 
+
 }
 
 
@@ -126,17 +127,68 @@
     border: #c4bebe00 solid 0.5px;
 }
 
+input:-webkit-autofill {
+    color: #2a2a2a !important;
+}
 
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-control:checked {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #4d9c8a;
+    color: #4d9c8a;
+
+}
 
 .inputForm {
-    background-color: #ffffff23;
+    background-color: #4d9c8a;
+    border-color: #4d9c8a;
+    outline: none;
+
+
 }
 
 .inputForm:focus {
-    background-color: #802e2e23;
+    background-color: #4d9c8a;
+    border-color: #af5491;
+    outline: none;
+
+
+    border: 0px solid;
 }
+
+*:focus {
+    outline: none;
+}
+
 
 .icon {
     font-size: 50px;
     margin-top: 10px;
+}
+
+.chRowOne:hover {
+
+    border-left: #ffffff solid 1px;
+    border-top: #ffffff solid 1px;
+
+}
+
+.chRowTwo:hover {
+    border-left: #ffffff solid 1px;
+    border-bottom: #ffffff solid 1px;
+
+}
+
+.chRowOThree:hover {
+
+    border-left: #dbd9d9 solid 1px;
+    border-top: #ffffff solid 1px;
+
 }
