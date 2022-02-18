@@ -15,16 +15,19 @@ const studentSchema = new Schema({
         required: true
 
     },
+    uniNumber: {
+        type: Number,
+        required: true,
+        unique: true,
+     
+
+    },
     email: {
         type: String,
         required: true,
         unique: true
     },
-    uniNumber: {
-        type: Number,
-        required: true,
-        unique: true,
-    },
+
     date: {
         type: Date,
         default: Date.now,

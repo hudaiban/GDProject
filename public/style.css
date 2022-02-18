@@ -173,12 +173,7 @@ input:-webkit-autofill {
     margin-top: 10px;
 }
 
-.chRowOne:hover {
 
-    border-left: #ffffff solid 1px;
-    border-top: #ffffff solid 1px;
-
-}
 
 .chRowTwo:hover {
     border-left: #ffffff solid 1px;
