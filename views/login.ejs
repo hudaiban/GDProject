@@ -22,10 +22,11 @@
 </head>
 <style>
     body {
+
         background-color: #398b79;
         background-repeat: no-repeat;
         background-size: cover;
-        height: fit-content;
+        height: 100vh;
     }
 
     #logo {
@@ -34,7 +35,7 @@
     }
 </style>
 
-<body id="body">
+<body>
     <nav class="navbar  shadow-lg mb-sm-5 ">
         <div class="container">
             <a class="navbar-brand text-white " id="logo" href="/ ">
@@ -43,47 +44,49 @@
             </a>
     </nav>
     <!----------------------------------#HERO--------------------------------------------->
+    <style>
 
-  
-        <section id="section  " class="d-flex justify-content-center align-content-center align-items-center">
-            <div class="container   " style=" display: flex; justify-content:center; align-content: center; ">
-                <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
-                    data-aos-duration="500" class="box mx-2  ">
-                    <div class="row-md-4 row-sm-12 shadow-lg p-5 " id="login">
-                        <form autocomplete="off" action="/loginSc" method="post">
-                            <div class="div d-flex justify-content-center">
-                                <h1 class=" text-center " style="font-size: 30px;color: #f5f5f5;">تسجيل الدخول <i
-                                        class="bi bi-box-arrow-in-left"></i></h1>
-                            </div>
-                            <div class="inputs mt-5">
-                                <div class="form-floating my-3">
-                                    <input type="email" class="form-control inputForm" id="floatingInput"
-                                        style="right:0;" placeholder="name@example.com">
-                                    <label style="right: 0; font-size: 20px;color: #f5f5f5;" id="one"
-                                        for="floatingInput  ">الايميل</label>
-                                </div>
-                                <div class="form-floating">
-                                    <input type="password" class="form-control inputForm" id="floatingPassword"
-                                        placeholder="Password">
-                                    <label style="right: 0; font-size: 20px;color: #f5f5f5d2;"
-                                        for="floatingPassword">الرقم
-                                        السري </label>
-                                </div>
-                            </div>
-                            <div class="btn d-flex justify-content-center   mt-5">
-                                <button type="submit" class="btn btn-outline-light ms-2 ">تسجيل الدخول</button>
-                                <a class=" btn btn-outline-light " href="/register">حساب جديد </a>
-                            </div>
+    </style>
 
-                        </form>
-                    </div>
+    <section id="section  " class="d-flex justify-content-center align-content-center align-items-center">
+        <div class="container   "
+            style=" display: flex; justify-content:center; align-content: center; margin-top: 5.4rem;  ">
+            <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500"
+                class="box mx-2  ">
+                <div class="row-md-4 row-sm-12 shadow-lg p-5 " id="login">
+                    <form autocomplete="off" action="/login" method="post">
+                        <div class="div d-flex justify-content-center">
+                            <h1 class=" text-center " style="font-size: 30px;color: #f5f5f5;">تسجيل الدخول <i
+                                    class="bi bi-box-arrow-in-left"></i></h1>
+                        </div>
+                        <div class="inputs mt-5">
+                            <div class="form-floating my-3">
+                                <input type="email" class="form-control inputForm" id="email" name="email"
+                                    style="right:0;" placeholder="email">
+                                <label style="right: 0; font-size: 20px;color: #f5f5f5;" id="one"
+                                    for="floatingInput  ">الايميل</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control inputForm" id="password" name="password"
+                                    placeholder="password">
+                                <label style="right: 0; font-size: 20px;color: #f5f5f5d2;" for="floatingPassword">الرقم
+                                    السري </label>
+                            </div>
+                        </div>
+                        <div class="btn d-flex justify-content-center   mt-5">
+                            <button type="submit" class="btn btn-outline-light ms-2 ">تسجيل الدخول</button>
+                            <a class=" btn btn-outline-light " href="/register">حساب جديد </a>
+                        </div>
 
+                    </form>
                 </div>
-            </div>
 
-    </div>
+            </div>
+        </div>
+
+        </div>
     </section>
- 
+
 
 
 

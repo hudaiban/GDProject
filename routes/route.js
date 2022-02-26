@@ -1,28 +1,31 @@
 const router = require('express').Router();
-const controller = require('../controller/signup');
+const routecontroller = require('../controller/routeController');
+const auth = require('../controller/authController');
+const { route } = require('express/lib/router');
 
 
-                // -- sign up -- //
+// -- sign up -- //
 
-router.post('/registerAccount',controller.signup);
+router.post('/register', auth.signup);
+// -- Login -- //
+router.post('/login', auth.login);
+
+
 
 // home page 
-
-router.get('/',controller.home);
+router.get('/', routecontroller.home);
 // GPA page
-router.get('/gpa', controller.gpa);
+router.get('/gpa', routecontroller.gpa);
+// planner page 
+router.get('/planner', routecontroller.planner)
 // Vote page 
-router.get('/vote', controller.vote);
+router.get('/vote', routecontroller.vote);
 // login page
-router.get('/login', controller.login);
+router.get('/login', routecontroller.login);
 // register page 
-router.get('/register', controller.register);
+router.get('/register', routecontroller.register);
+// relogin 
+router.get('/relogin', routecontroller.relogin)
 
 
-
-
-
-
-
-
-module.exports =router;
+module.exports = router;
